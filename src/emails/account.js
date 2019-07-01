@@ -1,6 +1,6 @@
 // fajl za slanje emaila putem Sendgrid npm modula
 const sgMail = require('@sendgrid/mail');
-//const sendgridAPIKey = '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';  // API key
+// API key
 //sgMail.setApiKey(sendgridAPIKey);  // dodaj APi key, stari način
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);  // dodaj APi key, novi način sa process.env
